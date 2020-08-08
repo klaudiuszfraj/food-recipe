@@ -2,6 +2,9 @@
     list-style: none;
     padding-inline-start: 0;
 }
-li{
+.show{
     line-height: 1.2em;
+}
+.hide{
+    display: none;
 }
