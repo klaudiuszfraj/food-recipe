@@ -24,7 +24,7 @@ const Ingredients = ({ingredients}) => {
                 <div className={arrowClasses}></div>
             </div>
             <ol className={listClasses}>
-                {ingredients.map((ingredient, index) => <li key={index}>{ingredient.text}</li>)}
+                {ingredients.map((ingredient, index) => <li key={index}>{ingredient.text} ({ingredient.weight.toFixed(2)}g)</li>)}
             </ol>
         </>
     )
