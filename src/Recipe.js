@@ -1,17 +1,16 @@
 import React from "react";
+import Ingredients from "./Ingerdients";
 import style from './recipe.module.css';
 
 const Recipe = ({title, calories, image, ingredients})=>{
     return (
         <div className={style.recipe}>
             <h1>{title}</h1>
-            <h3>Ingredients:</h3>
-            <ol>
-                {ingredients.map((ingredient, index) => <li key={index}>{ingredient.text}</li>)}
-            </ol>
+            <Ingredients ingredients={ingredients}/>
             <p>Calories - {calories.toFixed(2)}</p>
             <img className={style.image} src={image} alt=""/>
         </div>
     )
 }
 export default Recipe;
+//todo:: expor style to ingerdients
