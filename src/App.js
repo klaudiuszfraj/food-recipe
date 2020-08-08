@@ -43,7 +43,9 @@ const App = () => {
                                                         image={recipe.recipe.image}
                                                         ingredients={recipe.recipe.ingredients}
                                                         timeTotal={recipe.recipe.totalTime}
-                                                        weightTotal={recipe.recipe.totalWeight}/>)}
+                                                        weightTotal={recipe.recipe.totalWeight}
+                                                        totalDaily={recipe.recipe.totalDaily}
+                />)}
             </div>
         </div>
     )
