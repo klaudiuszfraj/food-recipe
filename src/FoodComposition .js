@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import style from "./styles/additionalInfo.module.css";
 
 
-const DailyRequirement = ({totalDaily}) => {
+const FoodComposition = ({composition, title}) => {
 
     const [show, setShow] = useState(style.hide);
     const [arrow, setArrow] = useState('');
@@ -18,11 +18,11 @@ const DailyRequirement = ({totalDaily}) => {
     }
     const arrowClasses = `${style.arrow} ${arrow}`
     const listClasses = `${style.ingredientsList} ${show}`
-    const fff = Object.entries(totalDaily).map(el =><li key={el[0]}>{el[1].label} - {el[1].quantity.toFixed(2)} {el[1].unit}</li>
+    const fff = Object.entries(composition).map(el =><li key={el[0]}>{el[1].label} - {el[1].quantity.toFixed(2)} {el[1].unit}</li>
     );
     return <>
         <div className={style.header} onClick={showList}>
-            <h3>Daily requirements:</h3>
+            <h3>{title}:</h3>
             <div className={arrowClasses}></div>
         </div>
         <ol className={listClasses}>
@@ -30,4 +30,4 @@ const DailyRequirement = ({totalDaily}) => {
         </ol>
     </>
 }
-export default DailyRequirement;
+export default FoodComposition;

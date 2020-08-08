@@ -45,6 +45,7 @@ const App = () => {
                                                         timeTotal={recipe.recipe.totalTime}
                                                         weightTotal={recipe.recipe.totalWeight}
                                                         totalDaily={recipe.recipe.totalDaily}
+                                                        totalNutrients={recipe.recipe.totalNutrients}
                 />)}
             </div>
         </div>
