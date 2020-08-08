@@ -8,7 +8,7 @@
 .arrow{
     width: 1em;
     height: 1em;
-    background-image: url("images/arrow.svg");
+    background-image: url("../images/arrow.svg");
     background-size: contain;
     margin-left: 10px;
 }

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import style from './ingredinets.module.css'
+import style from './styles/additionalInfo.module.css'
 
 
 const Ingredients = ({ingredients}) => {

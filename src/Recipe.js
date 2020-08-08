@@ -1,7 +1,7 @@
 import React from "react";
 import Ingredients from "./Ingerdients";
 import DailyRequirement from "./DailyRequirement";
-import style from './recipe.module.css';
+import style from './styles/recipe.module.css';
 
 const Recipe = ({title, calories, image, ingredients, timeTotal, weightTotal, totalDaily})=>{
     return (
