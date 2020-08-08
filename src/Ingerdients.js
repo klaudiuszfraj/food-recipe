@@ -8,21 +8,22 @@ const Ingredients = ({ingredients}) => {
 
     const showList = () => {
         if (show === style.hide) {
-            setShow(style.show)
+            setShow('')
             setArrow(style.reverseArrow)
         } else {
             setShow(style.hide)
             setArrow('')
         }
     }
-    const arrowClasses = `${arrow} ${style.arrow}`
+    const arrowClasses = `${style.arrow} ${arrow}`
+    const listClasses = `${style.ingredientsList} ${show}`
 
     return (<>
             <div className={style.header} onClick={showList}>
                 <h3>Ingredients:</h3>
                 <div className={arrowClasses}></div>
             </div>
-            <ol className={show}>
+            <ol className={listClasses}>
                 {ingredients.map((ingredient, index) => <li key={index}>{ingredient.text}</li>)}
             </ol>
         </>
