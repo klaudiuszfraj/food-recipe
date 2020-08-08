@@ -19,7 +19,10 @@
     list-style: none;
     padding-inline-start: 0;
     line-height: 1.2em;
+    transition: height 1s;
+    height: 100%;
+    overflow: hidden;
 }
 .hide{
-    display: none;
+    height: 0;
 }
